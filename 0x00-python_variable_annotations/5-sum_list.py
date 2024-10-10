@@ -2,9 +2,10 @@
 """
     Basic annotations - list of floats
 """
+from typing import List
 
 
-def sum_list(a: list[float]) -> float:
+def sum_list(a: List[float]) -> float:
     """
     Sums a list of integers
     """
