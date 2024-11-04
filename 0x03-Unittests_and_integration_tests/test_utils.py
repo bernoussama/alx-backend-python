@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-'''the utils module unit tests
-'''
+'''the utils module unit tests'''
 
 import unittest
 from parameterized import parameterized
@@ -12,8 +11,10 @@ from typing import (
     Tuple,
     Union,
 )
+
+
 class TestAccessNestedMap(unittest.TestCase):
-    '''Parameterize a unit test 
+    '''Parameterize a unit test
     '''
 
     @parameterized.expand([
@@ -26,7 +27,7 @@ class TestAccessNestedMap(unittest.TestCase):
             nested_map: Mapping,
             path: Sequence,
             expected: Union[Dict, int]
-            ) -> None:
+    ) -> None:
         '''Tests `access_nexted_map`'s output
         '''
         self.assertEqual(access_nested_map(nested_map, path), expected)
