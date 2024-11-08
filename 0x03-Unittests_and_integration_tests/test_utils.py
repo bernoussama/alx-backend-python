@@ -2,6 +2,7 @@
 """the utils module unit tests"""
 
 import unittest
+from unittest.mock import Mock, patch
 from parameterized import parameterized
 
 from typing import (
